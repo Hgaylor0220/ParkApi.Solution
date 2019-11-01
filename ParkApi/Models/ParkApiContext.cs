@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ParkApi.Models
 {
-    public class ParkApiContext : DbContext
+    public class ParkApiDbContext : DbContext
     {
-        public ParkApiContext(DbContextOptions<ParkApiContext> options)
+        public ParkApiDbContext(DbContextOptions<ParkApiDbContext> options)
             : base(options)
         {
         }

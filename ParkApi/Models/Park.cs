@@ -1,11 +1,15 @@
-namespace ParkApi
+
+
+namespace ParkApi.Models
 {
-    public class ParkApi
+    public class Park
     {
-        public int AnimalId { get; set; }
-        public string Name { get; set; }
-        public string Species { get; set; }
-        public int Age { get; set; }
-        public string Gender { get; set; }
+        public int ParkId { get; set; }
+        public string ParkName { get; set; }
+        public string Location { get; set; }
+        public int Corrdinates { get; set; }
+        public string Attraction { get; set; }
+        public string Information { get; set; }
+        public string RequirmentType { get; set; }
     }
 }
