@@ -19,7 +19,7 @@ namespace ParkApi.Controllers
 
         // GET api/rivers
         [HttpGet]
-        public ActionResult<IEnumerable<Park>> Get(string parkName, string location, int corrdinates, string attraction, string information, string requirements)
+        public ActionResult<IEnumerable<Park>> Get(string parkName, string location, int coordinates, string attraction, string information, string requirements)
         {
             var query = _db.Parks.AsQueryable();
 
@@ -33,9 +33,9 @@ namespace ParkApi.Controllers
                 query = query.Where(entry => entry.Location.Contains(location));
             }
 
-            if (corrdinates != null)
+            if (coordinates != null)
             {
-                query = query.Where(entry => entry.Corrdinates ==(corrdinates));
+                query = query.Where(entry => entry.Coordinates ==(coordinates));
             }
 
             if (attraction != null)
