@@ -17,9 +17,9 @@ namespace ParkApi.Controllers
             _db = db;
         }
 
-        // GET api/rivers
+        // GET api/parks
         [HttpGet]
-        public ActionResult<IEnumerable<Park>> Get(string parkName, string location, int coordinates, string attraction, string information, string requirements)
+        public ActionResult<IEnumerable<Park>> Get(string parkName, string location, string coordinates, string attraction, string information, string requirements)
         {
             var query = _db.Parks.AsQueryable();
 
@@ -58,37 +58,39 @@ namespace ParkApi.Controllers
             return query.ToList();
         }
 
-        // POST api/rivers
+        // POST api/parks
         [HttpPost]
-        public void Post([FromBody] Park river)
+        public void Post([FromBody] Park park)
         {
-            _db.Parks.Add(river);
+            _db.Parks.Add(park);
             _db.SaveChanges();
         }
 
-        // GET api/rivers/5
+        // GET api/parks/id
         [HttpGet("{id}")]
         public ActionResult<Park> Get(int id)
         {
             return _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
         }
 
-        // PUT api/rivers/5
+        // PUT api/parks/id
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Park river)
+        public void Put(int id, [FromBody] Park park)
         {
-            river.ParkId = id;
-            _db.Entry(river).State = EntityState.Modified;
+            park.ParkId = id;
+            _db.Entry(park).State = EntityState.Modified;
             _db.SaveChanges();
         }
 
-        // DELETE api/rivers/5
+        // DELETE api/parks/id
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var riverToDelete = _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
-            _db.Parks.Remove(riverToDelete);
+            var parkToDelete = _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
+            _db.Parks.Remove(parkToDelete);
             _db.SaveChanges();
         }
+
+        // 
     }
 }
