@@ -18,6 +18,7 @@ No API key necessary. Application follows CRUD functionaliy allowing a create, r
 - run the command $dotnet run watch To start the application 
 - Open Postman and add http://localhost:5000/api/Park to view all parks. Follow controller instructions for more search options
 
+
 ## Specs
 
 | Scenario | When given that | Result |
@@ -27,11 +28,12 @@ No API key necessary. Application follows CRUD functionaliy allowing a create, r
 | user can search by restrictions | Forest pass |  shows all parks with forest pass acceptance |
 | user can search for park by attraction| waterfalls| returns all parks with waterfalls |
 
-
+## Known bugs
+Db is not respoding to run build.
 
 ## Technologies
 
-C#, EntityFramework, .NET, MySQL Workbench, VS Code, .cshtml, ASP.NET, PostMan, API;
+C#, EntityFramework, .NET, MySQL Workbench, VS Code, .cshtml, ASP.NET, PostMan, API, NSwag documentation;
 
 ## License
 
