@@ -15,7 +15,7 @@ namespace ParkApi.Models
         {
             builder.Entity<Park>()
                 .HasData(
-                    new Park { ParkId = 1, ParkName = "Lava Canyon", Location = "South Cascases, Mount St. Helens", Coordinates = "46.1654, -122.0890", Attraction = "Hiking, Lava Rock, Waterfall, Draw Bridge", Information = "This hike has three sections. The first being very friendly, the second a little adventurest and the third for the experienced no fear of heights hikers. Ether way you will enjoy the one of the many beautiful views of what this powerful mountain has to offer.", RequirmentType = "Parking Pass with Northwest Forest Pass, $5 fee at site. No dogs." } ,
+                    new Park { ParkId = 1, ParkName = "Lava Canyon", Location = "South Cascades, Mount St. Helens", Coordinates = "46.1654, -122.0890", Attraction = "Hiking, Lava Rock, Waterfall, Draw Bridge", Information = "This hike has three sections. The first being very friendly, the second a little adventurest and the third for the experienced no fear of heights hikers. Ether way you will enjoy the one of the many beautiful views of what this powerful mountain has to offer.", RequirmentType = "Parking Pass with Northwest Forest Pass, $5 fee at site. No dogs." } ,
 
                     new Park {ParkId = 2, ParkName = "Salmon-Morgan Creeks Natrual Area", Location = "SouthWest Washington", Coordinates = "45.7556, -122.5111", Attraction = "Nice short hike surrounded in western redcedar, hemlock and fir trees.", Information = "1.8 miles, Good for kids.", RequirmentType = "No parking pass or fee required. Dogs are allowed on trail."} ,
 
@@ -25,25 +25,11 @@ namespace ParkApi.Models
 
                     new Park { ParkId = 5, ParkName = "Siouxon Creek", Location = "Southwest Washington ", Coordinates = "45.9406, -122.2294", Attraction = "Waterfalls, river side.", Information = "13.8 mile hike with 635 ft gain in elevation", RequirmentType = "Northwest Forest Pass" },
 
-                    new Park { ParkId = 6, ParkName = "Siouxon Peak Loop", Location = "South Cascades", Coordinates = "45.9430, -122.1854" , Attraction = "Waterfalls, Rivers, Footbridge, dogs allowed, summit views", Information = "15.3 mile hike with  5120 ft elevation gain", RequirmentType = "Northwest Forest Pass" } ,
+                    new Park { ParkId = 6, ParkName = "Siouxon Peak Loop", Location = "South Cascades", Coordinates = "45.9430, -122.1854" , Attraction = "Waterfalls, Rivers, Footbridge, dogs allowed, summit views", Information = "15.3 mile hike with  5120 ft elevation gain", RequirmentType = "Northwest Forest Pass" },
 
-                    new Park { ParkId = 7, ParkName = "June Lake", Location = "South Cascades", Coordinates = "46.1373, -122.1569", Attraction = "Stressfree hike with beutiful ending to a river and waterfall.", Information = "No dogs allowed, waterfall, family friendly, mountain views", RequirmentType = "NorthWest Forest Pass" },
+                    new Park { ParkId = 7, ParkName = "June Lake", Location = "South Cascades", Coordinates = "46.1373, -122.1569", Attraction = "Stressfree hike with beutiful ending to a river and waterfall.", Information = "No dogs allowed, waterfall, family friendly, mountain views", RequirmentType = "NorthWest Forest Pass" }
 
-                    // new Park { ParkId = 8, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 9, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 10, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 11, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 12, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 13, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 14, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" } ,
-
-                    // new Park { ParkId = 15, ParkName = "", Location = "", Coordinates = , Attraction = "", Information = "", RequirmentType = "" }
+                 
 
 
                 ); 
